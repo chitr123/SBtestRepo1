@@ -75,7 +75,3 @@ outputs:
     name: service-members
     condition: $parameters.svc-server-domains
     value: $components.lb-comp.outputs.service-members
-  - 
-    name: monitors
-    value: $components.monitors-comp
-
