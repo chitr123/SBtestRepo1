@@ -29,11 +29,6 @@ parameters:
 substitutions:
   mon-name(appname, monname): $appname + "-mon-" + $monname
 components: 
-  - 
-    name: lb-comp
-    type: stlb::lb 
-    properties-default-sources:
-      - $parameters
   -
     name: monitors-comp
     type: cmtypes::monitor
@@ -63,19 +58,3 @@ components:
         properties:
           name: $service.properties.name
           monitor_name: $parent.properties.monitorname
-outputs: 
-  - 
-    name: lbvserver
-    value: $components.lb-comp.outputs.lbvserver
-  - 
-    name: servicegroup
-    condition:  $parameters.svc-servers
-    value: $components.lb-comp.outputs.servicegroup
-  - 
-    name: service-members
-    condition: $parameters.svc-server-domains
-    value: $components.lb-comp.outputs.service-members
-  - 
-    name: monitors
-    value: $components.monitors-comp
-
