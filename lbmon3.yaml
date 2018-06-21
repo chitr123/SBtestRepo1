@@ -27,7 +27,7 @@ parameters:
     description: "List of Monitors to monitor Application Servers"
     type: cmtypes::monitor[]
 substitutions:
-  mon-name(appname, monname): $appname + "-mon-" + $monname
+  mon-name(appname, monname): $appname + "-mon-" 
 components: 
   - 
     name: lb-comp
