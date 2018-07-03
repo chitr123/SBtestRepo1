@@ -1,5 +1,5 @@
 --- 
-name: lbmon_1
+name: lbmon5
 namespace: com.citrix.adc.stylebooks
 version: "1.0"
 description: "This stylebook defines a typical Load Balanced Application configuration with monitors."
@@ -9,7 +9,7 @@ import-stylebooks:
   - 
     namespace: netscaler.nitro.config
     prefix: ns
-    version: "10.5"
+    version: 1"10.5"
   - 
     namespace: com.citrix.adc.stylebooks
     prefix: stlb
@@ -78,3 +78,4 @@ outputs:
   - 
     name: monitors
     value: $components.monitors-comp
+
