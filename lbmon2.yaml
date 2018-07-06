@@ -1,5 +1,5 @@
 --- 
-name: lbmon22
+name: lbmon2
 namespace: com.citrix.adc.stylebooks
 version: "1.0"
 description: "22qaew2211This stylebook defines a typical Load Balanced Application configuration with monitors."
