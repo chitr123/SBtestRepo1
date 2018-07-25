@@ -19,7 +19,7 @@ import-stylebooks:
     prefix: cmtypes
     version: "1.0"
 parameters-default-sources:
-  - stlb::a
+  - stlb::lb
 parameters:
   -
     name: monitors
